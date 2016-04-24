@@ -1,0 +1,47 @@
+@import './../main-template.less';
+/* Layout  3*/
+.wrapper {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+nav,
+aside {
+  width: 10em;
+}
+
+article {
+  flex: 1;
+}
+
+nav {
+  order: -1;
+}
+
+/* Responsive (fenêtres de moins de 640px) */
+@media (max-width: 640px) {
+  .wrapper {
+    flex-direction: column;
+    /* affichage vertical */
+  }
+  nav,
+  aside {
+    width: auto;
+    /* pour écraser la valeur 10em */
+  }
+  nav,
+  aside,
+  article {
+    flex-basis: auto;
+    /* pour écraser la valeur 0, due au flex: 1 */
+  }
+  nav {
+    order: 0;
+    /* nav reprend sa place */
+  }
+}
+
+header, nav, aside, article, footer {
+  margin: 0.4em;
+  padding: 1em;
+}

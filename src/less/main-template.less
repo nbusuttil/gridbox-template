@@ -1,0 +1,34 @@
+@import './template/color.less';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  /* crée un contexte flex pour ses enfants */
+  flex-direction: column;
+  /* affichage vertical */
+  min-height: 100vh;
+  /* toute la hauteur du viewport */
+}
+
+/* global css*/
+header,
+footer {
+  background: @color-one;
+}
+
+nav,
+aside {
+  background: @color-two;
+}
+
+article {
+  background: @color-three;
+}
