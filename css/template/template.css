@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  display: flex;
+  flex-direction: column;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* global css*/
+header,
+footer {
+  background: #3E606F;
+}
+nav,
+aside {
+  background: #91AA9D;
+}
+article {
+  background: #D1DBBD;
+}
+/* Layout */
+.wrapper {
+  display: flex;
+  flex: 1 1 auto;
+}
+header,
+footer {
+  padding: 2em;
+}
+.wrapper {
+  background: #91AA9D;
+}
